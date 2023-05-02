@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <div class="left">
+      <h1 class="heading">Learn to code by watching others</h1>
+      <p class="text-left">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="right">
+      <button class="try">Try it free 7 days then $20/mo. thereafter</button>
+      <form class="form">
+        <div class="form-box">
+          <input type="text" id="name" placeholder="First Name">
+          <p class="errortext"></p>
+        </div>
+        <div class="form-box">
+          <input type="text" id="lastname" placeholder="Last Name">
+          <p class="errortext"></p>
+        </div>
+        <div class="form-box">
+          <input type="email" id="email" placeholder="Email Address">
+          <p class="errortext"></p>
+        </div>
+        <div class="form-box">
+          <input type="password" id="password" placeholder="Password">
+          <p class="errortext"></p>
+        </div>
+        <button class="claim">Claim your free trial</button>
+        <p class="terms">By clicking the button, you are agreeing to our <span class="red">Terms and Services</span></p>
+      </form>
+    </div>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+:root{
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%); 
+    --grayishBlue: hsl(246, 25%, 77%);
+}
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(images/bg-intro-desktop.png), var(--red);
+}
+main{
+    display:flex;
+    margin: 0px 100px;
+}
+.form{
+    display:flex;
+    flex-direction: column;   
+    background-color: white;
+    padding:25px;
+    border-radius: 5px;
+    width:450px;
+}
+.try{
+    width:450px;
+    font-size: 0.8rem;
+    background-color: var(--blue);
+    padding:15px 10px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 5px 1px hsl(0, 36%, 53%);
+
+}
+.claim{
+    width:400px;
+    font-size: 0.9rem;
+    background-color: var(--green);
+    padding:15px 10px;
+    width:100%;
+    text-transform: uppercase;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px 1px hsl(154, 55%, 34%);
+    margin-top: 10px;
+
+}
+.claim:hover{
+    opacity:70%;
+}
+.try:hover{
+    opacity:70%;
+}
+.form-box input{
+    padding:10px;
+    margin-top: 15px;
+    border:none;
+    width:100%;
+    color: var(--darkBlue)
+}
+.form-box input:hover{
+    border: 1px solid var(--darkBlue);
+    border-radius: 5px;
+}
+.left{
+    width:500px;
+    margin-right:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    font-size: 3rem;
+}
+.terms{
+    font-size: 0.5rem;
+    color:var(--grayishBlue);
+    margin-top: 15px;
+    align-self: center;
+}
+.red{
+    color:tomato;
+    font-size: 0.5rem;
+}
+.form-box.error input{
+    border: 1px solid tomato;
+    border-radius: 5px;
+    background: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: left 95% bottom 50%;
+}
+.form-box .errortext {
+    color:tomato;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:375px){
+    main{
+        flex-direction: column;
+        margin: 0px 0px;
+        justify-content: center;
+    }  
+    .left{
+        width:370px;
+        align-items: center;
+        margin:auto;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .heading{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .form{
+        width:350px;
+    }
+    .try{
+        width:350px;
+    }
+    .right{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .terms{
+        font-size: 0.8rem;
+        width:270px;
+        text-align: center;
+    }
+    .red{
+        font-size: 0.8rem;
+    }
+}
